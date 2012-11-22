@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from functools import wraps
+import os
 
 app = Flask(__name__)
 
@@ -47,5 +48,8 @@ def contact():
     return render_template('contact.jinja2', active_page='contact')
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run('0.0.0.0', 5000)
+    port = os.getenv('PORT')
+    if port is not None:
+        app.run('0.0.0.0', int(port))
+    else:
+        app.run()
