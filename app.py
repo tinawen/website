@@ -31,25 +31,22 @@ def requires_auth(f):
 def home():
     return render_template('home.jinja2', active_page='home')
 
-@app.route("/qualifications")
-def qualifications():
-    return render_template('qualifications.jinja2', active_page='qualifications')
+@app.route("/bio")
+def bio():
+    return render_template('bio.jinja2', active_page='bio')
 
-@app.route("/approach")
-def approach():
-    return render_template('approach.jinja2', active_page='approach')
+@app.route("/resume")
+def resume():
+    return render_template('resume.jinja2', active_page='resume')
 
-@app.route("/fees")
-def fees():
-    return render_template('fees.jinja2', active_page='fees')
-
-@app.route("/contact")
-def contact():
-    return render_template('contact.jinja2', active_page='contact')
+@app.route("/projects")
+def projects():
+    return render_template('projects.jinja2', active_page='projects')
 
 if __name__ == "__main__":
     port = os.getenv('PORT')
     if port is not None:
         app.run('0.0.0.0', int(port))
     else:
-        app.run()
+        app.debug = True
+        app.run('0.0.0.0', 5000)

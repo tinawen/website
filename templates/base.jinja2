@@ -1,18 +1,25 @@
 <!doctype html>
-<title>Karyn Reader's Website</title>
+<title>Tina's Website</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/view.css') }}">
-<link rel="shortcut icon" href="/static/img/picture.png"/>
+<link rel="shortcut icon" href="/static/img/tab_icon.png"/>
+<div id="page_content">
+  {% block background %}
+  {% endblock background %}
+
+  <div id="titlebar">
+    <div id="title">
+      Tina Wen
+    </div>
+  </div>
+
   <div id="navbar">
-    <h1>Karyn Reader, MSW, LCSW</h1>
     <ul id="nav">
-      {% for id, caption in [('home', 'Home'), ('qualifications', 'Qualifications'), ('approach', 'Approach'), ('fees', 'Fees'), ('contact', 'Contact')] %}
+      {% for id, caption in [('home', 'Home'), ('bio', 'Biography'), ('resume', 'Resume'), ('projects', 'Projects')] %}
         <li><a href="{{ url_for(id) }}" {% if id == active_page %} class="active"{% endif %}>{{caption}}</a></li>
       {% endfor %}
-</ul>
-
-{% block background %}
-{% endblock background %}
-</div>
+    </ul>
+  </div>
 
   {% block page_content %}
   {% endblock page_content %}
+</div>
