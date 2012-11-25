@@ -40,9 +40,7 @@ body {
         position: relative;
         float: right;
         right: 0;
-        bottom: -50px;
-        padding-bottom: 0;
-        margin-bottom: 0;
+        bottom: 0;
         width: 50%;
         max-height: 90%; }
       body #page_content #home #homedesc {
