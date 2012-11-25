@@ -53,14 +53,25 @@ body {
 
     #page_content {
         background: white url("/static/img/background.png") repeat-x top left;
+        background-size: 100% 100%;
         height: 100%;
 
+        #content {
+            margin-top: 140px;
+            float: left;
+            margin-left: 250px;
+            color: #3c0470;
+            font-size: 26px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
         #titlebar {
-            position: fixed;
+            position: absolute;
             background-color: #2c2424;
             opacity: 0.7;
             width: 100%;
             height: 100px;
+            top: 0;
             min-width: 1150px;
 
             #title {
@@ -73,19 +84,31 @@ body {
             }
         }
 
-        img {
-            position: absolute;
-            float: right;
-            bottom: 0;
-            width: 700px;
-            @include transition(all, 2s, ease-in, 0.05s);
-            right: 0;
+        #home {
+            float: left;
+            margin-left: 220px;
+            margin-top: 110px;
 
-            &.offscreen {
-                @include translate(700px, 0);
+            img {
+                position: relative;
+                float: right;
+                right: 0;
+                bottom: -50px;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                width: 50%;
+                max-height: 90%;
+            }
+
+            #homedesc {
+                position: relative;
+                float: right;
+                color: #3c0470;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+                font-size: 26px;
+                width: 48%;
             }
         }
-
         #navbar {
             position: fixed;
             float: left;
@@ -103,6 +126,7 @@ body {
                     clear: left;
                     float: left;
                     width: 160px;
+                    height: 50px;
                     font-size: 22px;
                     padding: 8px 28px;
                     margin: 12px 0;
@@ -115,6 +139,14 @@ body {
                     &.active, &:focus {
                         background-color: #892276;
                         padding-right: 28px;
+
+                        img {
+                            width: 30px;
+                            position: relative;
+                            top: -40px;
+                            left: -17px;
+                            margin-right: 5px;
+                        }
                     }
 
                     a {
@@ -122,15 +154,7 @@ body {
                         text-decoration: none;
                         color: white;
                         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-                        margin-left: 20px;
-                    }
-
-                    img {
-                        width: 30px;
-                        position: relative;
-                        top: 8px;
-                        left: -140px;
-                        margin-right: 5px;
+                        padding-left: 20px;
                     }
                 }
             }

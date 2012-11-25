@@ -4,7 +4,9 @@
 <link rel="shortcut icon" href="/static/img/icon.png"/>
 <div id="page_content">
   {% block background %}
-    <img class="offscreen" src="/static/img/profile_pic.png" />
+    <div id="content">
+      Site is under rennovation. Content will come, soon...
+    </div>
   {% endblock background %}
 
   <div id="titlebar">
@@ -16,11 +18,8 @@
   <div id="navbar">
     <ul id="nav">
       {% for id, caption in [('home', 'Home'), ('bio', 'Biography'), ('resume', 'Resume'), ('projects', 'Projects')] %}
-        <li {% if id == active_page %} class="active"{% endif %}>{% if id == active_page %}<img src="/static/img/icon.png" />{% endif %}<a href="{{ url_for(id) }}">{{caption}}</a></li>
+        <li {% if id == active_page %} class="active"{% endif %}><a href="{{ url_for(id) }}">{{caption}}</a>{% if id == active_page %}<img src="/static/img/icon.png" />{% endif %}</li>
       {% endfor %}
     </ul>
   </div>
-
-  {% block page_content %}
-  {% endblock page_content %}
 </div>
