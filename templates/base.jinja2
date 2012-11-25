@@ -1,9 +1,10 @@
 <!doctype html>
 <title>Tina's Website</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/view.css') }}">
-<link rel="shortcut icon" href="/static/img/tab_icon.png"/>
+<link rel="shortcut icon" href="/static/img/icon.png"/>
 <div id="page_content">
   {% block background %}
+    <img class="offscreen" src="/static/img/profile_pic.png" />
   {% endblock background %}
 
   <div id="titlebar">
@@ -15,7 +16,7 @@
   <div id="navbar">
     <ul id="nav">
       {% for id, caption in [('home', 'Home'), ('bio', 'Biography'), ('resume', 'Resume'), ('projects', 'Projects')] %}
-        <li><a href="{{ url_for(id) }}" {% if id == active_page %} class="active"{% endif %}>{{caption}}</a></li>
+        <li {% if id == active_page %} class="active"{% endif %}>{% if id == active_page %}<img src="/static/img/icon.png" />{% endif %}<a href="{{ url_for(id) }}">{{caption}}</a></li>
       {% endfor %}
     </ul>
   </div>
