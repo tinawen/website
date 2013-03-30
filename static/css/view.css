@@ -108,9 +108,10 @@ body {
   width: 800px; }
 
 #resume-background {
-  -moz-box-shadow: -2px -2px 3px #eeeeee, inset 0 0 0 black;
-  -webkit-box-shadow: -2px -2px 3px #eeeeee, inset 0 0 0 black;
-  box-shadow: -2px -2px 3px #eeeeee, inset 0 0 0 black;
+  -moz-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.8), inset 0 0 0 black;
+  -webkit-box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.8), inset 0 0 0 black;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.8), inset 0 0 0 black;
+  /* @include box-shadow(-2px, -2px, 3px, #eee); */
   background-color: #fff;
   font-family: "Times New Roman", Times, serif;
   margin: 100px 0;
@@ -184,7 +185,10 @@ body {
     margin: 0; }
 
   #resume-background {
-    margin: 0; }
+    margin: 0 50px;
+    -moz-box-shadow: 0 0 0 white, inset 0 0 0 black;
+    -webkit-box-shadow: 0 0 0 white, inset 0 0 0 black;
+    box-shadow: 0 0 0 white, inset 0 0 0 black; }
 
   #print-resume {
     display: none; } }

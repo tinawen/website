@@ -175,7 +175,8 @@ body {
 }
 
 #resume-background {
-    @include box-shadow(-2px, -2px, 3px, #eee);
+    @include box-shadow(4px, 4px, 14px, rgba(0, 0, 0, 0.8));
+    /* @include box-shadow(-2px, -2px, 3px, #eee); */
     background-color: #fff;
     font-family: "Times New Roman", Times, serif;
     margin: 100px 0;
@@ -282,8 +283,9 @@ body {
         margin: 0;
     }
     #resume-background {
-        margin: 0;
-    }
+        margin: 0 50px;
+        @include box-shadow(0, 0, 0, #fff);
+   }
 
     #print-resume {
         display: none;
