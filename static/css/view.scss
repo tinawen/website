@@ -16,6 +16,12 @@
     box-shadow: $xoffset $yoffset $blur_size $color, inset $inset_xoffset $inset_yoffset $inset_blur_size $inset_color;
 }
 
+@mixin box-shadow-spread($xoffset, $yoffset, $blur_size, $spread, $color, $xoffset2: 0, $yoffset2: 0, $blur_size2: 0, $color2: 0, $inset_xoffset: 0, $inset_yoffset: 0, $inset_blur_size: 0, $inset_color: #000) {
+    -moz-box-shadow: $xoffset $yoffset $blur_size $spread $color, $xoffset2 $yoffset2 $blur_size2 $color2, inset $inset_xoffset $inset_yoffset $inset_blur_size $inset_color;
+    -webkit-box-shadow: $xoffset $yoffset $blur_size $spread $color, $xoffset2 $yoffset2 $blur_size2 $color2, inset $inset_xoffset $inset_yoffset $inset_blur_size $inset_color;
+    box-shadow: $xoffset $yoffset $blur_size $spread $color, $xoffset2 $yoffset2 $blur_size2 $color2, inset $inset_xoffset $inset_yoffset $inset_blur_size $inset_color;
+}
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -46,20 +52,19 @@ html {
 }
 
 body {
+    background-color: #afeeee;
     margin:0;
     padding: 0;
     height: 100%;
     font-family: Helvetica, Arial, sans-serif;
     min-width: 1150px;
+    min-height: 100%;
 
     #page_content {
-        position: relative;
-        background: white url("/static/img/background.jpg") repeat-x top left;
-        background-size: 100% 100%;
         height: 100%;
 
-        #content {
-            margin-top: 140px;
+        .content {
+            margin-top: 90px;
             float: left;
             margin-left: 250px;
             color: #3c0470;
@@ -67,28 +72,11 @@ body {
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
 
-        #titlebar {
-            position: absolute;
-            background-color: #2c2424;
-            opacity: 0.7;
-            width: 100%;
-            height: 100px;
-            top: 0;
-
-            #title {
-                color: white;
-                font-size: 46px;
-                font-weight: bold;
-                margin-left: 20px;
-                line-height: 100px;
-                text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-            }
-        }
 
         #home {
             float: left;
             margin-left: 220px;
-            margin-top: 110px;
+            margin-top: 70px;
 
             img {
                 position: absolute;
@@ -110,7 +98,7 @@ body {
         #navbar {
             position: fixed;
             float: left;
-            margin-top: 100px;
+            margin-top: 50px;
 
             #nav {
                 float: left;
@@ -118,7 +106,7 @@ body {
                 padding: 0;
 
                 li {
-                    background-color: #db37dc;
+                    background-color: #00bfff;
                     opacity: 0.8;
                     list-style: none;
                     clear: left;
@@ -135,9 +123,12 @@ body {
                     }
 
                     &.active, &:focus {
-                        background-color: #892276;
+                        background-color: #1e90ff;
                         padding-right: 28px;
 
+			            &:hover {
+				            padding-right: 50px;
+                        }
                         img {
                             width: 30px;
                             position: relative;
@@ -157,5 +148,144 @@ body {
                 }
             }
         }
+    }
+}
+
+.button {
+    color: #fff;
+    float: right;
+    font-size: 18px;
+    margin-right: 150px;
+    margin-top: 30px;
+    width: 130px;
+    height: 30px;
+    @include border-radius(5px);
+    @include box-shadow-spread(0, 0, 0, 1px, rgba(0, 0, 0, 0.19), 0, 2px, 1px, #6495ed, 0, 1px, 0, #6495ed);
+    @include vertical-gradient-rgba(rgba(255, 255, 255, 0.19), rgba(180, 180, 180, 0.19));
+    background-color: #000080;
+    text-decoration: none;
+    text-align: center;
+}
+
+#resume-page-wrapper {
+    height: 1650px;
+    margin-left: 250px;
+    float: left;
+    width: 800px;
+}
+
+#resume-background {
+    @include box-shadow(-2px, -2px, 3px, #eee);
+    background-color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    margin: 100px 0;
+    float: left;
+    height: 1450px;
+
+    #resume-content {
+        margin: 80px 60px;
+
+        #contact {
+            border-bottom: 1px solid #000;
+            height: 20px;
+            #name {
+                float: left;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            #email {
+                float: right;
+                padding: 0 5px;
+            }
+        }
+        .contact-field {
+            clear: both;
+            float: right;
+        }
+
+        .detail-field {
+            clear: both;
+
+            .section {
+                float: left;
+                margin-top: 25px;
+
+                .section-title {
+                    float: left;
+                    font-size: 16px;
+                    font-weight: bold;
+                    position: absolute;
+                    width: 120px;
+                }
+
+                .section-content-header {
+                    float: left;
+                    font-weight: bold;
+                    margin-left: 120px;
+                    width: 775px;
+
+                    #gpa {
+                        padding: 0 10px;
+                    }
+                    .location {
+                        float: right;
+                    }
+                }
+
+                .date {
+                    font-weight: normal;
+                    font-style: italic;
+                    padding: 0 10px;
+                }
+                .section-content-detail {
+                    float: left;
+                    margin-left: 120px;
+                    margin-top: 8px;
+                    width: 785px;
+
+                    &.no-header {
+                        margin-top: 0;
+                    }
+
+                    li {
+                        text-decoration: none;
+                        list-style: none;
+                    }
+
+                    .detail-header {
+                        padding-right: 5px;
+                        text-decoration: underline;
+                    }
+
+                    .article {
+                        margin-top: 12px;
+
+                        &.first {
+                            margin-top: 0;
+                        }
+                        .magazine {
+                            font-style: italic;
+                            padding: 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print {
+    #navbar {
+        display: none;
+    }
+    #resume-page-wrapper {
+        margin: 0;
+    }
+    #resume-background {
+        margin: 0;
+    }
+
+    #print-resume {
+        display: none;
     }
 }

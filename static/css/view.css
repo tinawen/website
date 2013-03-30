@@ -2,41 +2,26 @@ html {
   height: 100%; }
 
 body {
+  background-color: #afeeee;
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Helvetica, Arial, sans-serif;
-  min-width: 1150px; }
+  min-width: 1150px;
+  min-height: 100%; }
   body #page_content {
-    position: relative;
-    background: white url("/static/img/background.jpg") repeat-x top left;
-    background-size: 100% 100%;
     height: 100%; }
-    body #page_content #content {
-      margin-top: 140px;
+    body #page_content .content {
+      margin-top: 90px;
       float: left;
       margin-left: 250px;
       color: #3c0470;
       font-size: 26px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
-    body #page_content #titlebar {
-      position: absolute;
-      background-color: #2c2424;
-      opacity: 0.7;
-      width: 100%;
-      height: 100px;
-      top: 0; }
-      body #page_content #titlebar #title {
-        color: white;
-        font-size: 46px;
-        font-weight: bold;
-        margin-left: 20px;
-        line-height: 100px;
-        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); }
     body #page_content #home {
       float: left;
       margin-left: 220px;
-      margin-top: 110px; }
+      margin-top: 70px; }
       body #page_content #home img {
         position: absolute;
         right: 0;
@@ -53,13 +38,13 @@ body {
     body #page_content #navbar {
       position: fixed;
       float: left;
-      margin-top: 100px; }
+      margin-top: 50px; }
       body #page_content #navbar #nav {
         float: left;
         line-height: 50px;
         padding: 0; }
         body #page_content #navbar #nav li {
-          background-color: #db37dc;
+          background-color: #00bfff;
           opacity: 0.8;
           list-style: none;
           clear: left;
@@ -75,8 +60,10 @@ body {
           body #page_content #navbar #nav li:hover {
             padding-right: 50px; }
           body #page_content #navbar #nav li.active, body #page_content #navbar #nav li:focus {
-            background-color: #892276;
+            background-color: #1e90ff;
             padding-right: 28px; }
+            body #page_content #navbar #nav li.active:hover, body #page_content #navbar #nav li:focus:hover {
+              padding-right: 50px; }
             body #page_content #navbar #nav li.active img, body #page_content #navbar #nav li:focus img {
               width: 30px;
               position: relative;
@@ -89,3 +76,115 @@ body {
             color: white;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
             padding-left: 20px; }
+
+.button {
+  color: #fff;
+  float: right;
+  font-size: 18px;
+  margin-right: 150px;
+  margin-top: 30px;
+  width: 130px;
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.19), 0 2px 1px cornflowerblue, inset 0 1px 0 cornflowerblue;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.19), 0 2px 1px cornflowerblue, inset 0 1px 0 cornflowerblue;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.19), 0 2px 1px cornflowerblue, inset 0 1px 0 cornflowerblue;
+  background: rgba(180, 180, 180, 0.19);
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(180, 180, 180, 0.19)));
+  /* webkit */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.19), rgba(180, 180, 180, 0.19));
+  /* firefox 3.6+ */
+  background-color: #000080;
+  text-decoration: none;
+  text-align: center; }
+
+#resume-page-wrapper {
+  height: 1650px;
+  margin-left: 250px;
+  float: left;
+  width: 800px; }
+
+#resume-background {
+  -moz-box-shadow: -2px -2px 3px #eeeeee, inset 0 0 0 black;
+  -webkit-box-shadow: -2px -2px 3px #eeeeee, inset 0 0 0 black;
+  box-shadow: -2px -2px 3px #eeeeee, inset 0 0 0 black;
+  background-color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  margin: 100px 0;
+  float: left;
+  height: 1450px; }
+  #resume-background #resume-content {
+    margin: 80px 60px; }
+    #resume-background #resume-content #contact {
+      border-bottom: 1px solid #000;
+      height: 20px; }
+      #resume-background #resume-content #contact #name {
+        float: left;
+        font-weight: bold;
+        font-size: 20px; }
+      #resume-background #resume-content #contact #email {
+        float: right;
+        padding: 0 5px; }
+    #resume-background #resume-content .contact-field {
+      clear: both;
+      float: right; }
+    #resume-background #resume-content .detail-field {
+      clear: both; }
+      #resume-background #resume-content .detail-field .section {
+        float: left;
+        margin-top: 25px; }
+        #resume-background #resume-content .detail-field .section .section-title {
+          float: left;
+          font-size: 16px;
+          font-weight: bold;
+          position: absolute;
+          width: 120px; }
+        #resume-background #resume-content .detail-field .section .section-content-header {
+          float: left;
+          font-weight: bold;
+          margin-left: 120px;
+          width: 775px; }
+          #resume-background #resume-content .detail-field .section .section-content-header #gpa {
+            padding: 0 10px; }
+          #resume-background #resume-content .detail-field .section .section-content-header .location {
+            float: right; }
+        #resume-background #resume-content .detail-field .section .date {
+          font-weight: normal;
+          font-style: italic;
+          padding: 0 10px; }
+        #resume-background #resume-content .detail-field .section .section-content-detail {
+          float: left;
+          margin-left: 120px;
+          margin-top: 8px;
+          width: 785px; }
+          #resume-background #resume-content .detail-field .section .section-content-detail.no-header {
+            margin-top: 0; }
+          #resume-background #resume-content .detail-field .section .section-content-detail li {
+            text-decoration: none;
+            list-style: none; }
+          #resume-background #resume-content .detail-field .section .section-content-detail .detail-header {
+            padding-right: 5px;
+            text-decoration: underline; }
+          #resume-background #resume-content .detail-field .section .section-content-detail .article {
+            margin-top: 12px; }
+            #resume-background #resume-content .detail-field .section .section-content-detail .article.first {
+              margin-top: 0; }
+            #resume-background #resume-content .detail-field .section .section-content-detail .article .magazine {
+              font-style: italic;
+              padding: 0 4px; }
+
+@media print {
+  #navbar {
+    display: none; }
+
+  #resume-page-wrapper {
+    margin: 0; }
+
+  #resume-background {
+    margin: 0; }
+
+  #print-resume {
+    display: none; } }

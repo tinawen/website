@@ -1,7 +1,9 @@
 {% extends "base.jinja2" %}
 
-{% block background %}
+{% block page_content %}
   <div id="home">
+    <img src="/static/img/profile.png" />
+
     <div id="homedesc">
       <p>I'm a high-energy software developer currently working at Dropbox. After focusing on iOS development (pretty much solely on my own) for a year, I moved over to the web team to get more experience in terms of width of the product. Dropbox is an amazing place to work. I really enjoy working/hanging out with my co-workers.</p>
 
@@ -9,8 +11,5 @@
 
            <p>I like working on projects in my spare time. I’m a workout maniac. I workout every day. I believe having a healthy body helps me big time in my productivity. I run, play ultimate, go hiking, zumba, bhangra, etc, basically anything that can make me sweat. </p>
     </div>
-    <div id="wrapper_image">
-      <img src="/static/img/profile_pic.png" />
-    </div>
   </div>
-{% endblock background %}
+{% endblock page_content %}

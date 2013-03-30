@@ -1,6 +1,146 @@
 {% extends "base.jinja2" %}
-{# {% block page_content %} #}
-{#   <div class="qualification-content"> #}
+{% block page_content %}
+  <input class="button" type="button" onClick="window.print()" value="Print PDF" />
+  <div id="resume-page-wrapper">
+  <div id="resume-background">
+    <div id="resume-content">
+      <div id="contact">
+        <div id="name">Tina Wen</div>
+        <div id="email"><a href="mailto:tdubs@tinawen.com">tdubs@tinawen.com</a></div>
+      </div>
+      <div class="contact-field">
+        18 Lansing St, #309, San Francisco, CA 94105
+      </div>
+      <div class="contact-field">
+        (857) 204-3104
+      </div>
+      <div class="contact-field">
+        <a href="site-link">http://www.tinawen.com</a>
+      </div>
+      <div class="detail-field">
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div class="section-content-header">
+            <span class="title">Massachusetts Institute of Technology</span>
+            <span id="gpa">GPA 5.0/5.0</span>
+            <span class="location">Cambridge, MA</span>
+          </div>
+          <div class="section-content-detail">
+            <div>Masters of Engineering and Bachelor of Science in Electrical Engineering and Computer Science <span class="date">(04 - 09)</span></div>
+            <div>Master’s thesis:
+              <a href="/static/files/thesis.pdf">Bandwidth-Sensitive Oblivious Routing.</a>
+            </div>
+            <div>
+              Relevant Courses: Operating System Engineering (6.828), Parallel Computing (6.846), Computer Systems Architecture (6.823), Computer Network Systems (3F5).
+            </div>
+          </div>
+        </div>
 
-{#   </div> #}
-{# {% endblock page_content %} #}
+        <div class="section">
+          <div class="section-title">Experience</div>
+          <div class="section-content-header">
+            <span class="title">Dropbox, Software Engineer</span><span class="date">(August 11 - current)</span><span class="location">San Francisco, CA</span>
+          </div>
+          <div class="section-content-detail">
+            <li><span class="detail-header">iOS team</span>- Designed, implemented, and shipped game changing features such as camera upload, large file upload for the Dropbox iPhone and iPad app pretty much working by myself. <span class="date">(August 11 - October 12)</span></li>
+            <li><span class="detail-header">Web team</span>- Built and released large-scale, user visible features such as 100 Million Thanks, cross platform notifications. Wrote many unit testing code to maintain a large complicated system that we built and developerd.<span class="date">(November 12 - current</span></li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-content-header">
+            <span class="title">Microsoft, Office For Mac, Software Developer Engineer</span><span class="date">(September 09 - August 11)</span><span class="location">Mountain View, CA</span>
+          </div>
+          <div class="section-content-detail">
+            <li>Architected, designed, and developed features for Outlook For Mac using Objective-C (Cocoa) and C++. Area of responsibility included contacts, accounts, delegation, and distribution list expansion for mail and calender.</li>
+            <li>Shipped Office for Mac 2011.</li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-content-header">
+            <span class="title">Microsoft, Mediaroom, Software intern</span><span class="date">(Summer 08)</span><span class="location">Mountain View, CA</span>
+          </div>
+          <div class="section-content-detail">
+            <li>Developed client and end-to-end automation test scripts and APIs for Video on Demand for Microsoft TV.</li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-content-header">
+            <span class="title">NVIDIA, Hardware Intern</span><span class="date">(Summer of 06 and 07)</span><span class="location">Santa Clara, CA</span>
+          </div>
+          <div class="section-content-detail">
+            <li>Identified issues in GPUs by writing scripts and managing technicians on a tight schedule. <span class="time">(07)</span></li>
+            <li>Verified power saving tests written in C++ and debugged hardware in Verilog. <span class="time">(06)</span></li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Projects</div>
+          <div class="section-content-header">
+            <span class="title"><a href="https://github.com/tinawen/menu">Dropbox Menu Site for the cafeteria<a></span><span class="date">(Feburary 12)</span><span class="location">San Francisco, CA</span>
+          </div>
+          <div class="section-content-detail">
+            Over hackweek I implemented this menu website that allows menus to be added/edited/deleted by the chefs, daily menus to be viewed on the flatscreen TV in the cafteria or accessed through API. Each menu item indicates ingredients, allergens, and health factor. Dropboxers can easily browse all the menus starting from when the cafeteria opened. The website also populates google calendar and sends food emails automatically, 3 times a day. The menus are also easily printable into formatted food cards that are used for display in the cafeteria. The framework I used was pyramid.
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-content-header">
+            <span class="title"><a href="https://github.com/tinawen/Dropbox-Picture-Viewer">Dropbox Picture Viewer Chrome Extension<a></span><span class="date">(July 12)</span><span class="location">San Francisco, CA</span>
+          </div>
+          <div class="section-content-detail">
+            This is a chrome extension that does the OAuth dance to authenticate, uses the Dropbox API to pull all the pictures out of the user's dropbox and displays them in a window. Drag and drop into gmail or OSes is supported. The user can also configure what size image dropping should be.
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-content-header">
+            <span class="title"><a href="https://github.com/tinawen/Dropbox-File-Browser">Dropbox File Browser for Mac OSX<a></span><span class="date">(December 11)</span><span class="location">San Francisco, CA</span>
+          </div>
+          <div class="section-content-detail">
+            A desktop file browser app that uses Dropbox Mac OSX SDK. It supports login/logout, viewing files, downloading multiple files with queuing, canceling downloads, etc
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-content-header">
+            <span class="title"><a href="#">Fast Thinking Connect-4 Game<a></span><span class="date">(May 08)</span><span class="location">Cambridge, MA</span>
+          </div>
+          <div class="section-content-detail">
+            Designed a fast Connect-4 game using negamax search and a pruning algorithm with a unique parallel approach on a multicore chip (written in C).
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Languages</div>
+          <div class="section-content-detail no-header">
+            <li>Python, coffeescript/JS, SCSS/CSS, C/Objective-C, Java, Cocoa, Linux</li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Publications</div>
+          <div class="section-content-detail no-header">
+            <li class="article first">M.A. Kinsy, M.H. Cho, T. Wen, E. Suh, M. Van Dijk, and S. Devadas. "<a href='http://people.csail.mit.edu/devadas/pubs/bsor-isca.pdf'>Application-aware deadlock-free oblivious routing.</a>"<span class="magazine">ACM SIGARCH Computer Architecture News,</span> 37(3):208-219, 2009.</li>
+            <li class="article">K.S.Shim, M.H.Cho, M.Kinsy, T.Wen, M.Lis, GE Suh, and S.Devadas. "<a href='http://dspace.mit.edu/openaccess-disseminate/1721.1/51681'>Static virtual channel allocation in oblivious routing.</a>"<span class="magazine">In Networks-on-Chip, 2009. NoCS 2009. 3rd ACM/IEEE International Symposium on</span>, pages 28-43. IEEE, 2009.</li>
+            <li class="article">M.H.Cho, M.Lis, K.S.Shim, M.Kinsy, T.Wen and S.Devadas. "<a href='http://people.csail.mit.edu/mkinsy/papers/cho_pact09.pdf'>Oblivious routing in on-chip bandwidth-adaptive networks.</a>"<span class="magazine">In Parallel Architecture and compilation Techniques, 2009. PACT'09. 18th International Conference on</span>, pages 181-190. IEEE, 2009.</li>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Status</div>
+          <div class="section-content-detail no-header">US Citizen</div>
+        </div>
+
+        <div class="section">
+          <div class="section-title">Hobbies</div>
+          <div class="section-content-detail no-header">Dancing, ultimate, snowboarding/skiing, zumba, climbing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock page_content %}
+
