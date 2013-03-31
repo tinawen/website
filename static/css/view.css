@@ -20,12 +20,12 @@ body {
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
     body #page_content #home {
       margin-left: 250px; }
-      body #page_content #home a.bubble {
+      body #page_content #home #bubbles a.bubble {
         background: #0ff;
         color: #191970;
-        margin: 40px 50px;
+        margin: 85px 50px;
         float: left;
-        width: 200px;
+        width: 250px;
         height: 110px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
@@ -42,14 +42,24 @@ body {
         transition: all 0.2s ease-in-out 0;
         -webkit-transition: all 0.2s ease-in-out 0;
         -moz-transition: all 0.2s ease-in-out 0; }
-        body #page_content #home a.bubble:hover {
+        body #page_content #home #bubbles a.bubble:hover {
           -webkit-transform: scale(1.5);
           -moz-transform: scale(1.5);
           -o-transform: scale(1.5);
           transform: scale(1.5); }
-        body #page_content #home a.bubble img {
+        body #page_content #home #bubbles a.bubble img {
           position: relative;
           top: -50px; }
+      body #page_content #home #short-bio {
+        float: left;
+        width: 350px;
+        height: 284px;
+        background-image: url("/static/img/bio_background.png");
+        background-repeat: no-repeat;
+        background-position: center top; }
+        body #page_content #home #short-bio p {
+          margin: 50px 27px 0 27px;
+          line-height: 19px; }
     body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension {
       margin: 60px 70px 100px 250px;
       color: #191970;
@@ -84,10 +94,20 @@ body {
         clear: both;
         margin: 30px;
         width: 700px; }
-    body #page_content #project .project-title {
-      margin-top: 20px; }
-    body #page_content #project .project-desc {
-      margin-top: 10px; }
+    body #page_content #project {
+      text-align: center;
+      background-image: url("/static/img/hacksaw.png");
+      background-repeat: no-repeat;
+      background-position: center top; }
+      body #page_content #project .project-title {
+        text-align: left;
+        margin-top: 20px; }
+      body #page_content #project .project-desc {
+        text-align: left;
+        margin-top: 10px; }
+      body #page_content #project img {
+        width: 150px;
+        margin: 0; }
     body #page_content #connect4 #presentation {
       float: left; }
       body #page_content #connect4 #presentation li {
@@ -243,7 +263,8 @@ body {
     display: none; }
 
   #resume-page-wrapper {
-    margin: 0; }
+    margin: 0;
+    height: 1450px; }
 
   #resume-background {
     margin: 0 50px;
@@ -252,4 +273,7 @@ body {
     box-shadow: 0 0 0 white, inset 0 0 0 black; }
 
   #print-resume {
-    display: none; } }
+    display: none; }
+
+  a {
+    color: #000; } }

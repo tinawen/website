@@ -19,7 +19,7 @@
   {% endblock page_content %}
   <div id="navbar">
     <ul id="nav">
-      {% for id, caption in [('home', 'Home'), ('bio', 'Biography'), ('resume', 'Resume'), ('projects', 'Projects')] %}
+      {% for id, caption in [('home', 'Home'), ('bio', 'About Me'), ('resume', 'Resume'), ('projects', 'Projects')] %}
         <li {% if id == active_page %} class="active"{% endif %}><a href="{{ url_for(id) }}">{{caption}}</a>{% if id == active_page %}<img src="/static/img/icon.png" />{% endif %}</li>
       {% endfor %}
     </ul>

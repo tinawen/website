@@ -82,29 +82,43 @@ body {
 
         #home {
             margin-left: 250px;
-            a.bubble {
-                background: #0ff;
-                color: #191970;
-                margin: 40px 50px;
-                float: left;
-                width: 200px;
-                height: 110px;
-                @include border-radius(15px);
-                border: 3px solid #fff;
-                text-align: center;
-                line-height: 110px;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-                text-decoration: none;
-                font-weight: bold;
-                @include box-shadow(4px, 4px, 10px, rgba(0, 0, 0, 0.5));
-                @include transition(all, 0.2s, ease-in-out, 0);
+            #bubbles {
+                a.bubble {
+                    background: #0ff;
+                    color: #191970;
+                    margin: 85px 50px;
+                    float: left;
+                    width: 250px;
+                    height: 110px;
+                    @include border-radius(15px);
+                    border: 3px solid #fff;
+                    text-align: center;
+                    line-height: 110px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+                    text-decoration: none;
+                    font-weight: bold;
+                    @include box-shadow(4px, 4px, 10px, rgba(0, 0, 0, 0.5));
+                    @include transition(all, 0.2s, ease-in-out, 0);
 
-                &:hover {
-                    @include scale(1.5);
+                    &:hover {
+                        @include scale(1.5);
+                    }
+                    img {
+                        position: relative;
+                        top: -50px;
+                    }
                 }
-                img {
-                    position: relative;
-                    top: -50px;
+            }
+            #short-bio {
+                float: left;
+                width: 350px;
+                height: 284px;
+                background-image: url('/static/img/bio_background.png');
+                background-repeat: no-repeat;
+                background-position: center top;
+                p {
+                    margin: 50px 27px 0 27px;
+                    line-height: 19px;
                 }
             }
         }
@@ -159,11 +173,21 @@ body {
         }
 
         #project {
+            text-align: center;
+            background-image: url('/static/img/hacksaw.png');
+            background-repeat: no-repeat;
+            background-position: center top;
             .project-title {
+                text-align: left;
                 margin-top: 20px;
             }
             .project-desc {
+                text-align: left;
                 margin-top: 10px;
+            }
+            img {
+                width: 150px;
+                margin: 0;
             }
         }
         #connect4 {
@@ -366,6 +390,7 @@ body {
     }
     #resume-page-wrapper {
         margin: 0;
+        height: 1450px;
     }
     #resume-background {
         margin: 0 50px;
@@ -374,5 +399,8 @@ body {
 
     #print-resume {
         display: none;
+    }
+    a {
+        color: #000;
     }
 }
