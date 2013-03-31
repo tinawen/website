@@ -19,22 +19,37 @@ body {
       font-size: 26px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
     body #page_content #home {
-      float: left;
-      margin-left: 220px;
-      margin-top: 70px; }
-      body #page_content #home img {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 500px;
-        height: auto; }
-      body #page_content #home #homedesc {
-        position: relative;
-        color: #3c0470;
+      margin-left: 250px; }
+      body #page_content #home a.bubble {
+        background: #0ff;
+        color: #191970;
+        margin: 40px 50px;
+        float: left;
+        width: 200px;
+        height: 110px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        border: 3px solid #fff;
+        text-align: center;
+        line-height: 110px;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-        font-size: 26px;
-        left: 20px;
-        margin-right: 500px; }
+        text-decoration: none;
+        font-weight: bold;
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 black;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 black;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 black;
+        transition: all 0.2s ease-in-out 0;
+        -webkit-transition: all 0.2s ease-in-out 0;
+        -moz-transition: all 0.2s ease-in-out 0; }
+        body #page_content #home a.bubble:hover {
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          transform: scale(1.5); }
+        body #page_content #home a.bubble img {
+          position: relative;
+          top: -50px; }
     body #page_content #navbar {
       position: fixed;
       float: left;

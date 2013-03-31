@@ -1,3 +1,10 @@
+@mixin scale($factor) {
+    -webkit-transform: scale($factor);
+    -moz-transform: scale($factor);
+    -o-transform: scale($factor);
+    transform: scale($factor);
+}
+
 @mixin box-inset-shadow($xoffset, $yoffset, $blur_size, $color) {
     -moz-box-shadow: inset $xoffset $yoffset $blur_size $color;
     -webkit-box-shadow: inset $xoffset $yoffset $blur_size $color;
@@ -74,25 +81,31 @@ body {
 
 
         #home {
-            float: left;
-            margin-left: 220px;
-            margin-top: 70px;
-
-            img {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                width: 500px;
-                height: auto;
-            }
-
-            #homedesc {
-                position: relative;
-                color: #3c0470;
+            margin-left: 250px;
+            a.bubble {
+                background: #0ff;
+                color: #191970;
+                margin: 40px 50px;
+                float: left;
+                width: 200px;
+                height: 110px;
+                @include border-radius(15px);
+                border: 3px solid #fff;
+                text-align: center;
+                line-height: 110px;
                 text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-                font-size: 26px;
-                left: 20px;
-                margin-right: 500px;
+                text-decoration: none;
+                font-weight: bold;
+                @include box-shadow(4px, 4px, 10px, rgba(0, 0, 0, 0.5));
+                @include transition(all, 0.2s, ease-in-out, 0);
+
+                &:hover {
+                    @include scale(1.5);
+                }
+                img {
+                    position: relative;
+                    top: -50px;
+                }
             }
         }
         #navbar {
