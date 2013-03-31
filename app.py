@@ -51,6 +51,10 @@ def menu():
 def connect4():
     return render_template('connect4.jinja2', active_page='projects')
 
+@app.route("/file_browser")
+def file_browser():
+    return render_template('file_browser.jinja2', active_page='projects')
+
 if __name__ == "__main__":
     port = os.getenv('PORT')
     if port is not None:

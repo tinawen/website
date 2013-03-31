@@ -50,22 +50,37 @@ body {
         body #page_content #home a.bubble img {
           position: relative;
           top: -50px; }
-    body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4 {
+    body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser {
       margin: 60px 70px 100px 250px;
       color: #191970;
       float: left;
       line-height: 20px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
-    body #page_content #project, body #page_content #menu, body #page_content #connect4 {
+    body #page_content #bio #header #name {
+      float: left;
+      margin-left: 100px; }
+    body #page_content #bio #header #photo {
+      float: right;
+      margin-right: 100px; }
+    body #page_content #bio .bio-title {
+      clear: left;
+      float: left;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
       margin-top: 30px; }
-      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p {
+    body #page_content #bio p {
+      float: left;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+    body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser {
+      margin-top: 30px; }
+      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p {
         float: left; }
-      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li {
+      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li {
         float: left;
         list-style: none;
         margin: 10px;
         text-decoration: none; }
-      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img {
+      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img {
         clear: both;
         margin: 30px;
         width: 700px; }

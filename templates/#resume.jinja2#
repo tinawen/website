@@ -88,19 +88,19 @@
 
         <div class="section">
           <div class="section-content-header">
-            <span class="title"><a href="/file_browser">Dropbox File Browser for Mac OSX<a></span><span class="date">(December 11)</span><span class="location">San Francisco, CA</span>
+            <span class="title"><a href="https://github.com/tinawen/Dropbox-Picture-Viewer">Dropbox Picture Viewer Chrome Extension<a></span><span class="date">(July 12)</span><span class="location">San Francisco, CA</span>
           </div>
           <div class="section-content-detail">
-            A desktop file browser app that uses Dropbox Mac OSX SDK. It supports login/logout, viewing files, downloading multiple files with queuing, canceling downloads, etc.
+            This is a chrome extension that does the OAuth dance to authenticate with Dropbox, uses the Dropbox API to pull all the pictures out of a user's account, and displays them in a window to make them easily accessible. Drag and drop into Gmail or other windows is supported. The user can also configure what size image dropping should be.
           </div>
         </div>
 
         <div class="section">
           <div class="section-content-header">
-            <span class="title"><a href="https://github.com/tinawen/Dropbox-Picture-Viewer">Dropbox Picture Viewer Chrome Extension<a></span><span class="date">(July 12)</span><span class="location">San Francisco, CA</span>
+            <span class="title"><a href="https://github.com/tinawen/Dropbox-File-Browser">Dropbox File Browser for Mac OSX<a></span><span class="date">(December 11)</span><span class="location">San Francisco, CA</span>
           </div>
           <div class="section-content-detail">
-            This is a chrome extension that does the OAuth dance to authenticate with Dropbox, uses the Dropbox API to pull all the pictures out of a user's account, and displays them in a window to make them easily accessible. Drag and drop into Gmail or other windows is supported. The user can also configure what size image dropping should be.
+            A desktop file browser app that uses Dropbox Mac OSX SDK. It supports login/logout, viewing files, downloading multiple files with queuing, canceling downloads, etc.
           </div>
         </div>
 
