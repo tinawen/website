@@ -50,7 +50,7 @@ body {
         body #page_content #home a.bubble img {
           position: relative;
           top: -50px; }
-    body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser {
+    body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension {
       margin: 60px 70px 100px 250px;
       color: #191970;
       float: left;
@@ -71,16 +71,16 @@ body {
     body #page_content #bio p {
       float: left;
       text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-    body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser {
+    body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension {
       margin-top: 30px; }
-      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p {
+      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p, body #page_content #chrome-extension p {
         float: left; }
-      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li {
+      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li, body #page_content #chrome-extension li {
         float: left;
         list-style: none;
         margin: 10px;
         text-decoration: none; }
-      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img {
+      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img, body #page_content #chrome-extension img {
         clear: both;
         margin: 30px;
         width: 700px; }

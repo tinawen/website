@@ -45,15 +45,19 @@ def projects():
 
 @app.route("/menu")
 def menu():
-    return render_template('menu.jinja2', active_page='projects')
+    return render_template('projects/menu.jinja2', active_page='projects')
 
 @app.route("/connect4")
 def connect4():
-    return render_template('connect4.jinja2', active_page='projects')
+    return render_template('projects/connect4.jinja2', active_page='projects')
 
 @app.route("/file_browser")
 def file_browser():
-    return render_template('file_browser.jinja2', active_page='projects')
+    return render_template('projects/file_browser.jinja2', active_page='projects')
+
+@app.route("/chrome_extension")
+def chrome_extension():
+    return render_template('projects/chrome_extension.jinja2', active_page='projects')
 
 if __name__ == "__main__":
     port = os.getenv('PORT')

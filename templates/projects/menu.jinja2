@@ -1,0 +1,33 @@
+{% extends "base.jinja2" %}
+{% block page_content %}
+  <div id="menu">
+    <h1>Dropbox Menu Site for the cafeteria</h1>
+    <p>I love food. Nothing beats a freshly cooked cheeseburger served from Tuckshop, the Dropbox cafeteria. However, this presented an interesting problem -- I was spending way too much time dropping by the kitchen to chat with Chef Brian about what he's cooking.</p>
+
+    <p>Then, during hack week, an idea hit me like a sack of potatoes (yukon gold perfectly roasted with rosemary, of course). Why not combine my love of engineering with my love of food to create a menu website? That way, I could see what’s for dinner without going to the kitchen, and everybody could appreciate the hard work of our chefs.</p>
+
+    <p>The biggest challenge was coming up with an intuitive design and implementing all the functionality within a week.</p>
+
+    <p>Like any project, this one started out with a list of requirements:</p>
+
+
+    <li>1. The UI needs to be simple and intuitive to allow chefs to edit each dish. I worked closely with our world-class designer Morgan Knutson, who came up with something so clean I’d eat dinner off it. Ajax calls allowed me to save edits to the server without requiring the user to press a "Save" button.Something that looks like this:
+    </li>
+    <img src="/static/img/menu_post1.png" />
+
+    <li>2. The menu needs to contain important information that Dropboxers care about.  This meant including food item names, descriptions, allergens and health factor. To store these ever expanding menus, I chose MySQL as it’s perfect for simple database purposes such as this.</li>
+
+    <li>3. The kitchen needs to print menu cards to place by each dish.  This was accomplished by writing a print.css that does dynamic layout based on the length of each menu item.</li>
+
+    <li>4. We want the current menu to be displayed on a big screen TV in the kitchen, so the website had to be written in a way that supports dynamic layout based on the number of items being served on a given day. The page refreshes via Javascript to pick up changes.</li>
+    <img src="/static/img/menu_post2.png" />
+
+    <li>5. People don’t always want to manually check the website, so I integrated with Google Calendar. This way, people can export the menu to their own calendar. The site also sends emails twice per day, letting people know what will be served.  A simple cron job solved this perfectly.</li>
+
+    <p>As an engineer, the only joy that parallels building something great is seeing people use what you’ve made. Basic site analytics show that lots of people care about food at Dropbox, and I’m happy knowing that I made their lives easier, if only a little bite. =)</p>
+
+    <p>Here is a preview of our menu site, for the curious amongst you:</p>
+    <img src="/static/img/menu_post3.png" />
+    <img src="/static/img/menu_post4.png" />
+  </div>
+{% endblock page_content %}
