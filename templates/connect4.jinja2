@@ -1,0 +1,17 @@
+{% extends "base.jinja2" %}
+{% block page_content %}
+  <div id="connect4">
+    <p>This was a big parallel computing project completed all by myself. The whole project was coded in C with Tilera chip APIs for interacting with the multicore processor. The user can tune the size of the game board, the number to connect, and also the number of processors to use. I implemented 4 versions using nega-max search, and anaylized the tradeoffs of all the methods. The performance was excellent.</p>
+    <div id="presentation">
+      <div>Final presentation slides</div>
+      <li><a href="/static/files/connect4.pptx">pptx</a></li>
+      <li><a href="/static/files/connect4.pdf">pdf</a></li>
+    </div>
+    <div id="code">
+      <div>Sample code</div>
+      <li><a href="/static/files/seq_nopruning.c">Sequential version with no pruning</a></li>
+      <li><a href="/static/files/seq_pruning.c">Sequential version with pruning</a></li>
+      <li><a href="/static/files/interactive.c">Parallel vertion using individually allocated shared memory and pruning within each tile</a></li>
+    </div>
+  </div>
+{% endblock page_content %}

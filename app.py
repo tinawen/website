@@ -43,6 +43,14 @@ def resume():
 def projects():
     return render_template('projects.jinja2', active_page='projects')
 
+@app.route("/menu")
+def menu():
+    return render_template('menu.jinja2', active_page='projects')
+
+@app.route("/connect4")
+def connect4():
+    return render_template('connect4.jinja2', active_page='projects')
+
 if __name__ == "__main__":
     port = os.getenv('PORT')
     if port is not None:
