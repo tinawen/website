@@ -122,7 +122,7 @@ body {
                 }
             }
         }
-        #project, #bio, #menu, #connect4, #file-browser, #chrome-extension {
+        #project, #bio, #menu, #connect4, #file-browser, #chrome-extension, #traveling {
             margin: 60px 70px 100px 250px;
             color: #191970;
             float: left;
@@ -154,7 +154,7 @@ body {
             }
         }
 
-        #project, #menu, #connect4, #file-browser, #chrome-extension {
+        #project, #menu, #connect4, #file-browser, #chrome-extension, #traveling {
             margin-top: 30px;
             p {
                 float: left;
@@ -172,6 +172,21 @@ body {
             }
         }
 
+        #traveling {
+            text-align: center;
+            p {
+                text-align: left;
+            }
+            li {
+                display: block;
+                text-align: left;
+                width: 100%;
+                text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+                span {
+                    margin-left: 20px;
+                }
+            }
+        }
         #project {
             text-align: center;
             background-image: url('/static/img/hacksaw.png');

@@ -59,6 +59,10 @@ def file_browser():
 def chrome_extension():
     return render_template('projects/chrome_extension.jinja2', active_page='projects')
 
+@app.route("/traveling")
+def traveling():
+    return render_template('traveling.jinja2', active_page='home')
+
 if __name__ == "__main__":
     port = os.getenv('PORT')
     if port is not None:

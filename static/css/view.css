@@ -60,7 +60,7 @@ body {
         body #page_content #home #short-bio p {
           margin: 50px 27px 0 27px;
           line-height: 19px; }
-    body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension {
+    body #page_content #project, body #page_content #bio, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension, body #page_content #traveling {
       margin: 60px 70px 100px 250px;
       color: #191970;
       float: left;
@@ -81,19 +81,30 @@ body {
     body #page_content #bio p {
       float: left;
       text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-    body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension {
+    body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension, body #page_content #traveling {
       margin-top: 30px; }
-      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p, body #page_content #chrome-extension p {
+      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p, body #page_content #chrome-extension p, body #page_content #traveling p {
         float: left; }
-      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li, body #page_content #chrome-extension li {
+      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li, body #page_content #chrome-extension li, body #page_content #traveling li {
         float: left;
         list-style: none;
         margin: 10px;
         text-decoration: none; }
-      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img, body #page_content #chrome-extension img {
+      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img, body #page_content #chrome-extension img, body #page_content #traveling img {
         clear: both;
         margin: 30px;
         width: 700px; }
+    body #page_content #traveling {
+      text-align: center; }
+      body #page_content #traveling p {
+        text-align: left; }
+      body #page_content #traveling li {
+        display: block;
+        text-align: left;
+        width: 100%;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+        body #page_content #traveling li span {
+          margin-left: 20px; }
     body #page_content #project {
       text-align: center;
       background-image: url("/static/img/hacksaw.png");
