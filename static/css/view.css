@@ -278,7 +278,15 @@ body {
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   #resume-background {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #navbar #nav li {
+    padding: 8px 10px;
+    width: 100px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #resume-background {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #navbar #nav li {
+    padding: 8px 10px;
+    width: 100px; } }

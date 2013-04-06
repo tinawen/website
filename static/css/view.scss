@@ -412,6 +412,14 @@ body {
     #resume-background {
         margin-left: 0;
     }
+    #navbar {
+        #nav {
+            li {
+                padding: 8px 10px;
+                width: 100px;
+            }
+        }
+    }
 }
 
 // mobile
@@ -419,4 +427,13 @@ body {
     #resume-background {
         margin-left: 0;
     }
+    #navbar {
+        #nav {
+            li {
+                padding: 8px 10px;
+                width: 100px;
+            }
+        }
+    }
+
 }
