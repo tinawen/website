@@ -1,29 +1,33 @@
 <!doctype html>
-{% block meta_tag %}
-{% endblock meta_tag %}
-<title>Tina's Website</title>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/view.css') }}">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<html>
+  <head>
+    {% block meta_tag %}
+    {% endblock meta_tag %}
+    <title>Tina's Website</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/view.css') }}">
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-39735999-1', 'tinawen.com');
-  ga('send', 'pageview');
-</script>
-<link rel="shortcut icon" href="/static/img/favicon.png"/>
-<div id="page_content">
-  {% block page_content %}
-    <div class="content">
-      Site is under rennovation. Content will come, soon...
+        ga('create', 'UA-39735999-1', 'tinawen.com');
+        ga('send', 'pageview');
+      </script>
+      <link rel="shortcut icon" href="/static/img/favicon.png"/>
+  </head>
+  <div id="page_content">
+    {% block page_content %}
+      <div class="content">
+        Site is under rennovation. Content will come, soon...
+      </div>
+    {% endblock page_content %}
+    <div id="navbar">
+      <ul id="nav">
+        {% for id, caption in [('home', 'Home'), ('bio', 'About Me'), ('resume', 'Resume'), ('projects', 'Projects')] %}
+          <li {% if id == active_page %} class="active"{% endif %}><a href="{{ url_for(id) }}">{{caption}}</a>{% if id == active_page %}<img src="/static/img/icon.png" />{% endif %}</li>
+        {% endfor %}
+      </ul>
     </div>
-  {% endblock page_content %}
-  <div id="navbar">
-    <ul id="nav">
-      {% for id, caption in [('home', 'Home'), ('bio', 'About Me'), ('resume', 'Resume'), ('projects', 'Projects')] %}
-        <li {% if id == active_page %} class="active"{% endif %}><a href="{{ url_for(id) }}">{{caption}}</a>{% if id == active_page %}<img src="/static/img/icon.png" />{% endif %}</li>
-      {% endfor %}
-    </ul>
   </div>
-</div>
+</html>
