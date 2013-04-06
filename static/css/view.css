@@ -276,9 +276,14 @@ body {
   body > #page_content > .content > #resume-background {
     height: 1550px; } }
 
-@media only screen and (device-width: 768px) and (orientation: landscape) {
-  #resume-background {
-    margin-left: 0; }
+@media only screen and (device-width: 768px) {
+  #resumr-page-wrapper {
+    height: 1610px; }
+    #resumr-page-wrapper #resume-background {
+      margin-left: 0; }
+
+  #project.content {
+    width: 700px; }
 
   #navbar #nav li {
     padding: 8px 10px;
@@ -287,8 +292,13 @@ body {
   .button {
     display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #resume-background {
-    margin-left: 0; }
+  #resumr-page-wrapper {
+    height: 1610px; }
+    #resumr-page-wrapper #resume-background {
+      margin-left: 0; }
+
+  #project.content {
+    width: 700px; }
 
   #navbar #nav li {
     padding: 8px 10px;
