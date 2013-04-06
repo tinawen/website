@@ -171,23 +171,9 @@ body {
             }
         }
         #project {
-            margin-top: 50px;
-            padding: 50px 0;
-            text-align: center;
-            background-image: url('/static/img/hacksaw.png');
-            background-repeat: no-repeat;
-            background-position: center top;
-            .project-title {
-                text-align: left;
-                margin-top: 20px;
-            }
-            .project-desc {
-                text-align: left;
-                margin-top: 10px;
-            }
-            img {
-                width: 150px;
-                margin: 0;
+            p {
+                margin-top: 0;
+                margin-bottom: 0;
             }
         }
         #connect4 {

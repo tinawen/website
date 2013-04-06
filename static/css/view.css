@@ -92,22 +92,9 @@ body {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
         body #page_content #traveling li span {
           margin-left: 20px; }
-    body #page_content #project {
-      margin-top: 50px;
-      padding: 50px 0;
-      text-align: center;
-      background-image: url("/static/img/hacksaw.png");
-      background-repeat: no-repeat;
-      background-position: center top; }
-      body #page_content #project .project-title {
-        text-align: left;
-        margin-top: 20px; }
-      body #page_content #project .project-desc {
-        text-align: left;
-        margin-top: 10px; }
-      body #page_content #project img {
-        width: 150px;
-        margin: 0; }
+    body #page_content #project p {
+      margin-top: 0;
+      margin-bottom: 0; }
     body #page_content #connect4 #presentation {
       float: left; }
       body #page_content #connect4 #presentation li {
