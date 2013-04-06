@@ -282,3 +282,6 @@ body {
 
   a {
     color: #000; } }
+@-moz-document url-prefix() {
+  #resume-background {
+    height: 1550; } }
