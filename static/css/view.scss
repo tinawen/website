@@ -409,6 +409,9 @@ body {
 
 //ipad
 @media only screen and (device-width: 768px) {
+   body > #page_content > .content > #resume-background {
+        height: 1550px;
+    }
     #resumr-page-wrapper {
         height: 1610px;
 
@@ -434,6 +437,10 @@ body {
 
 // mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+   body > #page_content > .content > #resume-background {
+        height: 1550px;
+    }
+
     #resumr-page-wrapper {
         height: 1610px;
         #resume-background {
