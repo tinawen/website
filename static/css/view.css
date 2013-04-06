@@ -282,6 +282,7 @@ body {
 
   a {
     color: #000; } }
+/* Firefox only */
 @-moz-document url-prefix() {
-  #resume-background {
-    height: 1550; } }
+  body > #page_content > .content > #resume-background {
+    height: 1550px; } }
