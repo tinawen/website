@@ -71,22 +71,22 @@ body {
         height: 100%;
 
         .content {
-            margin-top: 90px;
+            margin: 40px 20px 40px 260px;
             float: left;
-            margin-left: 250px;
-            color: #3c0470;
-            font-size: 26px;
+            width: 900px;
+            color: #191970;
+            line-height: 20px;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
 
 
         #home {
-            margin-left: 250px;
+            margin-top: 0;
             #bubbles {
                 a.bubble {
                     background: #0ff;
                     color: #191970;
-                    margin: 85px 50px;
+                    margin: 50px;
                     float: left;
                     width: 250px;
                     height: 110px;
@@ -109,28 +109,11 @@ body {
                     }
                 }
             }
-            #short-bio {
-                float: left;
-                width: 350px;
-                height: 284px;
-                background-image: url('/static/img/bio_background.png');
-                background-repeat: no-repeat;
-                background-position: center top;
-                p {
-                    margin: 50px 27px 0 27px;
-                    line-height: 19px;
-                }
-            }
-        }
-        #project, #bio, #menu, #connect4, #file-browser, #chrome-extension, #traveling {
-            margin: 60px 70px 100px 250px;
-            color: #191970;
-            float: left;
-            line-height: 20px;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
 
         #bio {
+            float: left;
+            padding-bottom: 20px;
             #header {
                 #name {
                     float: left;
@@ -155,7 +138,7 @@ body {
         }
 
         #project, #menu, #connect4, #file-browser, #chrome-extension, #traveling {
-            margin-top: 30px;
+            margin-top: 50px;
             p {
                 float: left;
             }
@@ -188,6 +171,8 @@ body {
             }
         }
         #project {
+            margin-top: 50px;
+            padding: 50px 0;
             text-align: center;
             background-image: url('/static/img/hacksaw.png');
             background-repeat: no-repeat;
@@ -222,7 +207,7 @@ body {
         #navbar {
             position: fixed;
             float: left;
-            margin-top: 50px;
+            margin-top: 30px;
 
             #nav {
                 float: left;
@@ -279,8 +264,8 @@ body {
     color: #fff;
     float: right;
     font-size: 18px;
-    margin-right: 170px;
-    margin-top: 30px;
+    margin-right: 200px;
+    margin-top: 20px;
     width: 130px;
     height: 30px;
     @include border-radius(5px);
@@ -291,9 +276,10 @@ body {
     text-align: center;
 }
 
-#resume-page-wrapper {
+#page_content > #resume-page-wrapper{
+    margin-top: 0;
     height: 1650px;
-    margin-left: 250px;
+    margin-left: 230px;
     float: left;
     width: 800px;
 }
@@ -303,12 +289,12 @@ body {
     /* @include box-shadow(-2px, -2px, 3px, #eee); */
     background-color: #fff;
     font-family: "Times New Roman", Times, serif;
-    margin: 100px 0;
+    margin: 80px 20px;
     float: left;
-    height: 1450px;
+    height: 1500px;
 
     #resume-content {
-        margin: 80px 60px;
+        margin: 50px 40px;
 
         #contact {
             border-bottom: 1px solid #000;
@@ -403,16 +389,21 @@ body {
     #navbar {
         display: none;
     }
-    #resume-page-wrapper {
+    #page_content > #resume-page-wrapper {
         margin: 0;
-        height: 1450px;
+        height: 1300px;
     }
     #resume-background {
-        margin: 0 50px;
+        margin: 0 70px;
+        padding: 0;
+        height: 1470px;
         @include box-shadow(0, 0, 0, #fff);
+        #resume-content {
+            margin-top: 40px;
+        }
    }
 
-    #print-resume {
+    .button {
         display: none;
     }
     a {
