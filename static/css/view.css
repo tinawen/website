@@ -15,6 +15,7 @@ body {
       margin: 40px 20px 40px 260px;
       float: left;
       width: 900px;
+      min-width: 900px;
       color: #191970;
       line-height: 20px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
@@ -51,7 +52,6 @@ body {
           position: relative;
           top: -50px; }
     body #page_content #bio {
-      float: left;
       padding-bottom: 20px; }
       body #page_content #bio #header #name {
         float: left;
@@ -130,7 +130,7 @@ body {
           list-style: none;
           clear: left;
           float: left;
-          width: 160px;
+          width: 125px;
           height: 50px;
           font-size: 22px;
           padding: 8px 28px;
@@ -185,7 +185,7 @@ body {
 #page_content > #resume-page-wrapper {
   margin-top: 0;
   height: 1650px;
-  margin-left: 230px;
+  margin-left: 175px;
   float: left;
   width: 800px; }
 
@@ -196,11 +196,11 @@ body {
   /* @include box-shadow(-2px, -2px, 3px, #eee); */
   background-color: #fff;
   font-family: "Times New Roman", Times, serif;
-  margin: 80px 20px;
+  margin: 30px 20px;
   float: left;
   height: 1500px; }
   #resume-background #resume-content {
-    margin: 50px 40px; }
+    margin: 50px 30px; }
     #resume-background #resume-content #contact {
       border-bottom: 1px solid #000;
       height: 20px; }
