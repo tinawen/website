@@ -252,8 +252,8 @@ body {
     color: #fff;
     float: left;
     font-size: 18px;
-    margin-left: 195px;
-    margin-top: 22px;
+    margin-left: 20px;
+    margin-top: 10px;
     width: 130px;
     height: 30px;
     @include border-radius(5px);
@@ -273,6 +273,7 @@ body {
 }
 
 #resume-background {
+    clear: left;;
     @include box-shadow(4px, 4px, 14px, rgba(0, 0, 0, 0.8));
     /* @include box-shadow(-2px, -2px, 3px, #eee); */
     background-color: #fff;
