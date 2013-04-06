@@ -14,7 +14,7 @@ body {
     body #page_content .content {
       margin: 40px 20px 40px 260px;
       float: left;
-      width: 900px;
+      width: 850px;
       min-width: 900px;
       color: #191970;
       line-height: 20px;
@@ -282,11 +282,17 @@ body {
 
   #navbar #nav li {
     padding: 8px 10px;
-    width: 100px; } }
+    width: 100px; }
+
+  .button {
+    display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #resume-background {
     margin-left: 0; }
 
   #navbar #nav li {
     padding: 8px 10px;
-    width: 100px; } }
+    width: 100px; }
+
+  .button {
+    display: none; } }

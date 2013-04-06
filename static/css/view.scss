@@ -73,7 +73,7 @@ body {
         .content {
             margin: 40px 20px 40px 260px;
             float: left;
-            width: 900px;
+            width: 850px;
             min-width: 900px;
             color: #191970;
             line-height: 20px;
@@ -420,6 +420,9 @@ body {
             }
         }
     }
+   .button {
+        display: none;
+    }
 }
 
 // mobile
@@ -435,5 +438,7 @@ body {
             }
         }
     }
-
+   .button {
+        display: none;
+    }
 }
