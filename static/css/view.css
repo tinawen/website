@@ -92,9 +92,10 @@ body {
         text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
         body #page_content #traveling li span {
           margin-left: 20px; }
-    body #page_content #project p {
-      margin-top: 0;
+    body #page_content #project h3 {
       margin-bottom: 0; }
+    body #page_content #project p {
+      margin-bottom: 30px; }
     body #page_content #connect4 #presentation {
       float: left; }
       body #page_content #connect4 #presentation li {
@@ -147,10 +148,10 @@ body {
 
 .button {
   color: #fff;
-  float: right;
+  float: left;
   font-size: 18px;
-  margin-right: 200px;
-  margin-top: 20px;
+  margin-left: 195px;
+  margin-top: 22px;
   width: 130px;
   height: 30px;
   -webkit-border-radius: 5px;
@@ -183,7 +184,7 @@ body {
   /* @include box-shadow(-2px, -2px, 3px, #eee); */
   background-color: #fff;
   font-family: "Times New Roman", Times, serif;
-  margin: 30px 20px;
+  margin: 27px 20px;
   float: left;
   height: 1500px; }
   #resume-background #resume-content {
@@ -273,3 +274,10 @@ body {
 @-moz-document url-prefix() {
   body > #page_content > .content > #resume-background {
     height: 1550px; } }
+
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  #resume-background {
+    margin-left: 0; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #resume-background {
+    margin-left: 0; } }
