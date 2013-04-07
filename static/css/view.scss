@@ -266,8 +266,8 @@ body {
 
 #page_content > #resume-page-wrapper{
     margin-top: 0;
-    height: 1650px;
     margin-left: 175px;
+    padding-bottom: 20px;
     float: left;
     width: 800px;
 }
@@ -280,7 +280,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin: 27px 20px;
     float: left;
-    height: 1500px;
+    padding-bottom: 20px;
 
     #resume-content {
         margin: 50px 30px;
@@ -380,12 +380,10 @@ body {
     }
     #page_content > #resume-page-wrapper {
         margin: 0;
-        height: 1300px;
     }
     #resume-background {
         margin: 0 70px;
         padding: 0;
-        height: 1470px;
         @include box-shadow(0, 0, 0, #fff);
         #resume-content {
             margin-top: 40px;
@@ -400,21 +398,9 @@ body {
     }
 }
 
-/* Firefox only */
-@-moz-document url-prefix() {
-    body > #page_content > .content > #resume-background {
-        height: 1550px;
-    }
-}
-
 //ipad
 @media only screen and (device-width: 768px) {
-   body > #page_content > .content > #resume-background {
-        height: 1550px;
-    }
-    #resumr-page-wrapper {
-        height: 1610px;
-
+     #resumr-page-wrapper {
         #resume-background {
             margin-left: 0;
         }
@@ -437,12 +423,7 @@ body {
 
 // mobile
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-   body > #page_content > .content > #resume-background {
-        height: 1550px;
-    }
-
-    #resumr-page-wrapper {
-        height: 1610px;
+     #resumr-page-wrapper {
         #resume-background {
             margin-left: 0;
         }
