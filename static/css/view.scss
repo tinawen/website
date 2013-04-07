@@ -64,7 +64,7 @@ body {
     padding: 0;
     height: 100%;
     font-family: Helvetica, Arial, sans-serif;
-    min-width: 1150px;
+    /* min-width: 1150px; */
     min-height: 100%;
 
     #page_content {
@@ -73,7 +73,7 @@ body {
         .content {
             margin: 40px 20px 40px 260px;
             float: left;
-            width: 850px;
+            width: 70%;
             min-width: 850px;
             color: #191970;
             line-height: 20px;
@@ -208,7 +208,7 @@ body {
                     list-style: none;
                     clear: left;
                     float: left;
-                    width: 125px;
+                    width: 120px;
                     height: 50px;
                     font-size: 22px;
                     padding: 8px 28px;
@@ -267,9 +267,9 @@ body {
 #page_content > #resume-page-wrapper{
     margin-top: 0;
     margin-left: 175px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     float: left;
-    width: 800px;
+    width: 85%;
 }
 
 #resume-background {
@@ -280,7 +280,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin: 27px 20px;
     float: left;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     #resume-content {
         margin: 50px 30px;
@@ -309,6 +309,7 @@ body {
             .section {
                 float: left;
                 margin-top: 25px;
+                width: 100%;
 
                 .section-title {
                     float: left;
@@ -322,7 +323,7 @@ body {
                     float: left;
                     font-weight: bold;
                     margin-left: 120px;
-                    width: 775px;
+                    width: 88%;
 
                     #gpa {
                         padding: 0 10px;
@@ -341,7 +342,7 @@ body {
                     float: left;
                     margin-left: 120px;
                     margin-top: 8px;
-                    width: 785px;
+                    width: 88%;
 
                     &.no-header {
                         margin-top: 0;
@@ -380,13 +381,17 @@ body {
     }
     #page_content > #resume-page-wrapper {
         margin: 0;
+        width: 1110px;
     }
     #resume-background {
-        margin: 0 70px;
+        margin: 0;
         padding: 0;
         @include box-shadow(0, 0, 0, #fff);
         #resume-content {
             margin-top: 40px;
+        }
+        .section {
+            margin: 0;
         }
    }
 
@@ -399,14 +404,11 @@ body {
 }
 
 //ipad
-@media only screen and (device-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
      #resumr-page-wrapper {
         #resume-background {
             margin-left: 0;
         }
-    }
-    #project.content {
-        width: 1000px;
     }
     #navbar {
         #nav {
@@ -422,16 +424,12 @@ body {
 }
 
 // mobile
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
      #resumr-page-wrapper {
         #resume-background {
             margin-left: 0;
         }
     }
-    #project.content {
-        width: 1000px;
-    }
-
     #navbar {
         #nav {
             li {
