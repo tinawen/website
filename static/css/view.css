@@ -284,7 +284,7 @@ body {
     display: none; }
 
   body > #page_content .content#project {
-    margin-left: 160px; }
+    margin-left: 200px; }
   body > #page_content .content#home {
     margin-left: 160px; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -299,6 +299,6 @@ body {
     display: none; }
 
   body > #page_content .content#project {
-    margin-left: 160px; }
+    margin-left: 200px; }
   body > #page_content .content#home {
     margin-left: 160px; } }
