@@ -64,7 +64,6 @@ body {
     padding: 0;
     height: 100%;
     font-family: Helvetica, Arial, sans-serif;
-    /* min-width: 1150px; */
     min-height: 100%;
 
     #page_content {
@@ -72,9 +71,10 @@ body {
 
         .content {
             margin: 40px 20px 40px 260px;
+            padding-right: 40px;
             float: left;
             width: 70%;
-            min-width: 850px;
+            min-width: 830px;
             color: #191970;
             line-height: 20px;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -151,7 +151,7 @@ body {
             img {
                 clear: both;
                 margin: 30px;
-                width: 700px;
+                width: 80%;
             }
         }
 
@@ -273,14 +273,12 @@ body {
 }
 
 #resume-background {
-    clear: left;;
+    clear: left;
     @include box-shadow(4px, 4px, 14px, rgba(0, 0, 0, 0.8));
-    /* @include box-shadow(-2px, -2px, 3px, #eee); */
     background-color: #fff;
     font-family: "Times New Roman", Times, serif;
     margin: 27px 20px;
     float: left;
-    padding-bottom: 30px;
 
     #resume-content {
         margin: 50px 30px;
@@ -288,6 +286,7 @@ body {
         #contact {
             border-bottom: 1px solid #000;
             height: 20px;
+            /* margin-right: 20px; */
             #name {
                 float: left;
                 font-weight: bold;
@@ -301,18 +300,16 @@ body {
         .contact-field {
             clear: both;
             float: right;
+            /* margin-right: 20px; */
         }
 
         .detail-field {
             clear: both;
 
             .section {
-                float: left;
-                margin-top: 25px;
-                width: 100%;
+                padding: 10px 0;
 
                 .section-title {
-                    float: left;
                     font-size: 16px;
                     font-weight: bold;
                     position: absolute;
@@ -320,10 +317,8 @@ body {
                 }
 
                 .section-content-header {
-                    float: left;
                     font-weight: bold;
                     margin-left: 120px;
-                    width: 88%;
 
                     #gpa {
                         padding: 0 10px;
@@ -339,10 +334,8 @@ body {
                     padding: 0 10px;
                 }
                 .section-content-detail {
-                    float: left;
                     margin-left: 120px;
                     margin-top: 8px;
-                    width: 88%;
 
                     &.no-header {
                         margin-top: 0;
@@ -380,8 +373,9 @@ body {
         display: none;
     }
     #page_content > #resume-page-wrapper {
-        margin: 0;
-        width: 1110px;
+        margin: 10px 20px 0 20px;
+        width: 1030px;
+        padding-bottom: 0;
     }
     #resume-background {
         margin: 0;
@@ -390,8 +384,12 @@ body {
         #resume-content {
             margin-top: 40px;
         }
-        .section {
-            margin: 0;
+        .detail-field {
+            margin-right: 0;
+
+            .section {
+                margin: 0;
+            }
         }
    }
 
