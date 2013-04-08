@@ -20,7 +20,8 @@ body {
       line-height: 20px;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
     body #page_content #home {
-      margin-top: 0; }
+      margin-top: 0;
+      min-width: 0; }
       body #page_content #home #bubbles a.bubble {
         background: #0ff;
         color: #191970;
@@ -68,6 +69,8 @@ body {
       body #page_content #bio p {
         float: left;
         text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+    body #page_content #project {
+      min-width: 0; }
     body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension, body #page_content #traveling {
       margin-top: 50px; }
       body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p, body #page_content #chrome-extension p, body #page_content #traveling p {

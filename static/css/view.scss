@@ -83,6 +83,7 @@ body {
 
         #home {
             margin-top: 0;
+            min-width: 0;
             #bubbles {
                 a.bubble {
                     background: #0ff;
@@ -137,6 +138,9 @@ body {
             }
         }
 
+        #project {
+            min-width: 0;
+        }
         #project, #menu, #connect4, #file-browser, #chrome-extension, #traveling {
             margin-top: 50px;
             p {
