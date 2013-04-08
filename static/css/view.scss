@@ -423,13 +423,14 @@ body {
    .button {
         display: none;
     }
-   .content#project{
-       margin-left: 160px;
+   body>#page_content {
+       .content#project{
+           margin-left: 160px;
+       }
+       .content#home{
+           margin-left: 160px;
+       }
    }
-   .content#home{
-       margin-left: 160px;
-   }
-
 }
 
 // mobile
@@ -450,11 +451,12 @@ body {
    .button {
         display: none;
     }
-   .content#project{
-       margin-left: 160px;
+   body>#page_content {
+       .content#project{
+           margin-left: 160px;
+       }
+       .content#home{
+           margin-left: 160px;
+       }
    }
-   .content#home{
-       margin-left: 160px;
-   }
-
 }
