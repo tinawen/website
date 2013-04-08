@@ -281,7 +281,13 @@ body {
     width: 100px; }
 
   .button {
-    display: none; } }
+    display: none; }
+
+  .content#project {
+    margin-left: 160px; }
+
+  .content#home {
+    margin-left: 160px; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   #resumr-page-wrapper #resume-background {
     margin-left: 0; }
@@ -291,4 +297,10 @@ body {
     width: 100px; }
 
   .button {
-    display: none; } }
+    display: none; }
+
+  .content#project {
+    margin-left: 160px; }
+
+  .content#home {
+    margin-left: 160px; } }
