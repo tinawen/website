@@ -2,11 +2,11 @@ html {
   height: 100%; }
 
 body {
-  background-color: #afeeee;
+  background-color: #d6ffff;
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   min-height: 100%; }
   body #page_content {
     height: 100%; }
@@ -17,41 +17,44 @@ body {
       width: 70%;
       min-width: 830px;
       color: #191970;
-      line-height: 20px;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+      line-height: 20px; }
     body #page_content #home {
       margin-top: 0;
       min-width: 0; }
-      body #page_content #home #bubbles a.bubble {
-        background: #0ff;
-        color: #191970;
-        margin: 50px;
+      body #page_content #home #bubbles .bubble a {
+        margin: 30px;
         float: left;
-        width: 250px;
-        height: 110px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-        border: 3px solid #fff;
-        text-align: center;
-        line-height: 110px;
-        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        width: 360px;
+        height: 239px;
+        border: 5px solid #b8e8e8;
         text-decoration: none;
-        font-weight: bold;
-        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 black;
-        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 black;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5), inset 0 0 0 black;
         transition: all 0.2s ease-in-out 0;
         -webkit-transition: all 0.2s ease-in-out 0;
         -moz-transition: all 0.2s ease-in-out 0; }
-        body #page_content #home #bubbles a.bubble:hover {
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -o-transform: scale(1.5);
-          transform: scale(1.5); }
-        body #page_content #home #bubbles a.bubble img {
-          position: relative;
-          top: -50px; }
+        body #page_content #home #bubbles .bubble a .bubble-text {
+          color: #fff;
+          font-size: 24px;
+          text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+          margin-top: 190px;
+          margin-left: 30px; }
+        body #page_content #home #bubbles .bubble a#dropbox {
+          background-color: rgba(0, 0, 0, 0.7);
+          background-image: url("/static/img/dropbox.png"); }
+        body #page_content #home #bubbles .bubble a#food {
+          background-image: url("/static/img/food.png"); }
+        body #page_content #home #bubbles .bubble a#mit {
+          background-image: url("/static/img/mit.png"); }
+        body #page_content #home #bubbles .bubble a#travel {
+          background-image: url("/static/img/travel.png"); }
+        body #page_content #home #bubbles .bubble a#coder {
+          background-image: url("/static/img/coder.png"); }
+        body #page_content #home #bubbles .bubble a#about-me {
+          background-image: url("/static/img/profile_tina.png"); }
+        body #page_content #home #bubbles .bubble a:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1); }
     body #page_content #bio {
       padding-bottom: 20px; }
       body #page_content #bio #header #name {
@@ -63,24 +66,38 @@ body {
       body #page_content #bio .bio-title {
         clear: left;
         float: left;
-        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
         font-weight: bold;
         margin-top: 30px; }
       body #page_content #bio p {
         float: left;
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-    body #page_content #project {
-      min-width: 0; }
-    body #page_content #project, body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension, body #page_content #traveling {
-      margin-top: 50px; }
-      body #page_content #project p, body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p, body #page_content #chrome-extension p, body #page_content #traveling p {
+        line-height: 24px; }
+    body #page_content #project .project-item {
+      clear: both;
+      margin: 20px 0;
+      padding: 20px 0; }
+      body #page_content #project .project-item .project-image {
+        float: left;
+        height: 100px;
+        width: 100px; }
+        body #page_content #project .project-item .project-image img {
+          height: 100px;
+          width: 100px; }
+      body #page_content #project .project-item .project-desc {
+        margin-left: 120px; }
+        body #page_content #project .project-item .project-desc .project-detail {
+          margin-top: 5px;
+          line-height: 24px; }
+    body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension, body #page_content #traveling {
+      margin-top: 50px;
+      line-height: 24px; }
+      body #page_content #menu p, body #page_content #connect4 p, body #page_content #file-browser p, body #page_content #chrome-extension p, body #page_content #traveling p {
         float: left; }
-      body #page_content #project li, body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li, body #page_content #chrome-extension li, body #page_content #traveling li {
+      body #page_content #menu li, body #page_content #connect4 li, body #page_content #file-browser li, body #page_content #chrome-extension li, body #page_content #traveling li {
         float: left;
         list-style: none;
         margin: 10px;
         text-decoration: none; }
-      body #page_content #project img, body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img, body #page_content #chrome-extension img, body #page_content #traveling img {
+      body #page_content #menu img, body #page_content #connect4 img, body #page_content #file-browser img, body #page_content #chrome-extension img, body #page_content #traveling img {
         clear: both;
         margin: 30px;
         width: 80%; }
@@ -91,8 +108,7 @@ body {
       body #page_content #traveling li {
         display: block;
         text-align: left;
-        width: 100%;
-        text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+        width: 100%; }
         body #page_content #traveling li span {
           margin-left: 20px; }
     body #page_content #project h3 {
@@ -116,8 +132,13 @@ body {
         line-height: 50px;
         padding: 0; }
         body #page_content #navbar #nav li {
-          background-color: #00bfff;
-          opacity: 0.8;
+          background-color: rgba(0, 0, 0, 0.1);
+          -webkit-border-bottom-right-radius: 10px;
+          -moz-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-border-top-right-radius: 10px;
+          -moz-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
           list-style: none;
           clear: left;
           float: left;
@@ -131,23 +152,25 @@ body {
           -moz-transition: all 0.1s ease-in 0.05s; }
           body #page_content #navbar #nav li:hover {
             padding-right: 50px; }
+          body #page_content #navbar #nav li a {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            padding-left: 20px; }
           body #page_content #navbar #nav li.active, body #page_content #navbar #nav li:focus {
-            background-color: #1e90ff;
+            background-color: rgba(0, 0, 0, 0.5);
             padding-right: 28px; }
             body #page_content #navbar #nav li.active:hover, body #page_content #navbar #nav li:focus:hover {
               padding-right: 50px; }
+            body #page_content #navbar #nav li.active a, body #page_content #navbar #nav li:focus a {
+              color: #fff;
+              opacity: 1; }
             body #page_content #navbar #nav li.active img, body #page_content #navbar #nav li:focus img {
               width: 30px;
               position: relative;
               top: -40px;
               left: -17px;
               margin-right: 5px; }
-          body #page_content #navbar #nav li a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-            padding-left: 20px; }
 
 .button {
   color: #fff;

@@ -6,18 +6,42 @@
 {% block page_content %}
   <div id="home" class="content">
     <div id="bubbles">
-      <a class="bubble" href="https://www.dropbox.com/about">Engineer at Dropbox</a>
-      <a class="bubble" href="http://swe.mit.edu/members/profile15.php">MIT Graduate</a>
-      <a class="bubble" href="/projects">Enthusiastic Coder</a>
+      <div class="bubble">
+        <a id="dropbox" href="https://www.dropbox.com/about">
+          <div class="bubble-text">Engineer at Dropbox</div>
+        </a>
+      </div>
+      <div class="bubble">
+        <a id="mit" href="http://swe.mit.edu/members/profile15.php">
+          <div class="bubble-text">MIT Graduate</div>
+        </a>
+      </div>
+      <div class="bubble">
+        <a id="coder" href="/projects">
+          <div class="bubble-text">Enthusiastic Coder</div>
+        </a>
+      </div>
 
-      <a class="bubble" href="/menu">Food Lover</a>
+      <div class="bubble">
+        <a id="food" href="/menu">
+          <div class="bubble-text">Food Lover</div>
+        </a>
+      </div>
     {# <div id="short-bio"> #}
     {#   <p>I'm a software engineer at Dropbox focusing on web development. I also had a year-long stint working on the Dropbox iOS client, creating key features designed to drive user engagement. Before joining Dropbox, I was a developer at Microsoft and helped launch the first version of Mac Outlook. I hold a bachelor’s degree in electrical engineering and a master’s degree in computer architecture, both from MIT.</p> #}
     {# </div> #}
 
       {# <a class="bubble" href="https://lap.io/event/2013-pycon-5k-charity-fun-run/results">Power Through</a> #}
-      <a class="bubble" href="/traveling">Love Travelling</a>
-      <a class="bubble" href="/bio"><img src="/static/img/profile_tina.png" /></a>
+      <div class="bubble">
+        <a id="travel" href="/traveling">
+          <div class="bubble-text">Love Travelling</div>
+        </a>
+      </div>
+      <div class="bubble">
+        <a id="about-me" href="/bio">
+          <div class="bubble-text">More About Me</div>
+        </a>
+      </div>
     </div>
   </div>
 {% endblock page_content %}

@@ -1,33 +1,52 @@
 {% extends "base.jinja2" %}
 {% block page_content %}
   <div class="content" id="project">
-    <h3>
-      <a href="/menu">Dropbox Menu Site for the cafeteria</a>
-    </h3>
-    <p>
-      This is a menu website that allows menus to be added/edited/deleted by the company chefs and daily menus to be viewed on the flatscreen TV in the cafeteria or accessed through a browser or an API. Each menu item indicates ingredients, allergens, and health factor. Dropboxers can easily browse all the menus starting from when the cafeteria opened. The website populates google calendar and sends food emails automatically, 3 times a day. The menus are also easily printable into formatted food cards that are used for display in the cafeteria. This project is built on the Pyramid framework. Code is on <a href="https://github.com/tinawen/menu">github</a>.
-    </p>
+    <div class="project-item">
+      <div class="project-image">
+        <img src="/static/img/menu_thumb.png" />
+      </div>
+      <div class="project-desc">
+        <a href="/menu">Dropbox Menu Site for the cafeteria</a>
+        <div class="project-detail">
+          This is a menu website that allows menus to be added/edited/deleted by the company chefs and daily menus to be viewed on the flatscreen TV in the cafeteria or accessed through a browser or an API. Each menu item indicates ingredients, allergens, and health factor. Dropboxers can easily browse all the menus starting from when the cafeteria opened. The website populates google calendar and sends food emails automatically, 3 times a day. The menus are also easily printable into formatted food cards that are used for display in the cafeteria. This project is built on the Pyramid framework. Code is on <a href="https://github.com/tinawen/menu">github</a>.
+        </div>
+      </div>
+    </div>
 
-    <h3>
-      <a href="/connect4">A Fast Thinking Connect-4 Game</a>
-    </h3>
-    <p>
-      Designed a fast Connect-4 game using negamax search and a pruning algorithm with a unique parallel approach on a multicore chip (written in C).
-    </p>
+    <div class="project-item">
+      <div class="project-image">
+        <img src="/static/img/connect4_thumb.png" />
+      </div>
+      <div class="project-desc">
+        <a href="/connect4">A Fast Thinking Connect-4 Game</a>
+        <div class="project-detail">
+          Designed a fast Connect-4 game using negamax search and a pruning algorithm with a unique parallel approach on a multicore chip (written in C).
+        </div>
+      </div>
+    </div>
 
-    <h3>
-      <a href="/file_browser">Dropbox File Browser for Mac OSX</a>
-    </h3>
-    <p>
-      A desktop file browser app that uses Dropbox Mac OSX SDK. It supports login/logout, viewing files, downloading multiple files with queuing, canceling downloads, etc. Code is on <a href="https://github.com/tinawen/Dropbox-File-Browser">github</a>.
-    </p>
+    <div class="project-item">
+      <div class="project-image">
+        <img src="/static/img/file_browser_thumb.png" />
+      </div>
+      <div class="project-desc">
+        <a href="/file_browser">Dropbox File Browser for Mac OSX</a>
+        <div class="project-detail">
+          A desktop file browser app that uses Dropbox Mac OSX SDK. It supports login/logout, viewing files, downloading multiple files with queuing, canceling downloads, etc. Code is on <a href="https://github.com/tinawen/Dropbox-File-Browser">github</a>.
+        </div>
+      </div>
+    </div>
 
-    <h3>
-      <a href="/chrome_extension">Dropbox Picture Viewer Chrome Extension</a>
-      </h3>
-      <p>
-        This is a chrome extension that does the OAuth dance to authenticate with Dropbox, uses the Dropbox API to pull all the pictures out of a user's account, and displays them in a window to make them easily accessible. Drag and drop into Gmail or other windows is supported. The user can also configure what size image dropping should be. Code is on <a href="https://github.com/tinawen/Dropbox-Picture-Viewer">github</a>.
-      </p>
-
+    <div class="project-item">
+      <div class="project-image">
+        <img src="/static/img/chrome_extension_thumb.png" />
+      </div>
+      <div class="project-desc">
+        <a href="/chrome_extension">Dropbox Picture Viewer Chrome Extension</a>
+        <div class="project-detail">
+          This is a chrome extension that does the OAuth dance to authenticate with Dropbox, uses the Dropbox API to pull all the pictures out of a user's account, and displays them in a window to make them easily accessible. Drag and drop into Gmail or other windows is supported. The user can also configure what size image dropping should be. Code is on <a href="https://github.com/tinawen/Dropbox-Picture-Viewer">github</a>.
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock page_content %}
