@@ -71,22 +71,23 @@ body {
       body #page_content #bio p {
         float: left;
         line-height: 24px; }
-    body #page_content #project .project-item {
-      clear: both;
-      margin: 20px 0;
-      padding: 20px 0; }
-      body #page_content #project .project-item .project-image {
-        float: left;
-        height: 100px;
-        width: 100px; }
-        body #page_content #project .project-item .project-image img {
-          height: 100px;
-          width: 100px; }
-      body #page_content #project .project-item .project-desc {
-        margin-left: 120px; }
-        body #page_content #project .project-item .project-desc .project-detail {
-          margin-top: 5px;
-          line-height: 24px; }
+    body #page_content .content#project {
+      margin-left: 220px; }
+      body #page_content .content#project .project-item {
+        clear: both;
+        margin: 20px 0;
+        padding: 20px 0; }
+        body #page_content .content#project .project-item .project-image {
+          float: left;
+          width: 200px; }
+          body #page_content .content#project .project-item .project-image img {
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            width: 200px; }
+        body #page_content .content#project .project-item .project-desc {
+          margin-left: 240px; }
+          body #page_content .content#project .project-item .project-desc .project-detail {
+            margin-top: 5px;
+            line-height: 24px; }
     body #page_content #menu, body #page_content #connect4, body #page_content #file-browser, body #page_content #chrome-extension, body #page_content #traveling {
       margin-top: 50px;
       line-height: 24px; }
@@ -146,7 +147,7 @@ body {
           height: 50px;
           font-size: 22px;
           padding: 8px 28px;
-          margin: 12px 0;
+          margin: 4px 0;
           transition: all 0.1s ease-in 0.05s;
           -webkit-transition: all 0.1s ease-in 0.05s;
           -moz-transition: all 0.1s ease-in 0.05s; }

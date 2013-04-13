@@ -167,22 +167,23 @@ body {
             }
         }
 
-        #project {
+        .content#project {
+            margin-left: 220px;
+
             .project-item {
                 clear: both;
                 margin: 20px 0;
                 padding: 20px 0;
                 .project-image {
                     float: left;
-                    height: 100px;
-                    width: 100px;
+                    width: 200px;
                     img {
-                        height: 100px;
-                        width: 100px;
+                        border: 2px solid rgba(0, 0, 0, 0.1);
+                        width: 200px;
                     }
                 }
                 .project-desc {
-                    margin-left: 120px;
+                    margin-left: 240px;
                     .project-detail {
                         margin-top: 5px;
                         line-height: 24px;
@@ -265,7 +266,7 @@ body {
                     height: 50px;
                     font-size: 22px;
                     padding: 8px 28px;
-                    margin: 12px 0;
+                    margin: 4px 0;
                     @include transition(all, 0.1s, ease-in, 0.05s);
 
                     &:hover {
